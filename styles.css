@@ -1,0 +1,194 @@
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1D3557;
+    color: #F1FAEE;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: #F1FAEE;
+}
+
+form {
+    background-color: #457B9D;
+    /* margin: 2rem; */
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+form > div > div {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+form > div:nth-of-type(3)>div {
+    flex-grow: 0;
+}
+
+form > div > div > input {
+    flex-grow: 1;
+}
+
+input {
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.5em;
+    margin: 0 0.5rem;
+    flex-grow: 1;
+}
+label{
+    font-size: 1rem;    
+    font-weight: 500;
+}
+
+
+.input {
+    display: flex;
+}
+
+
+.add-book-btn {
+    height: 3rem;
+    border-radius: 1em;
+    border: none;
+    background-color: #E63946;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.container {
+    /* margin: 2rem; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    background-color: white;
+    color: #1D3557;
+    border-radius: 1em;
+    padding: 2rem;
+    flex-basis: calc(100%/3.5);
+    margin-bottom: 2rem;
+    margin: 1rem 0.5rem;
+    color: #457B9D;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    color: #E63946;
+    /* text-transform: uppercase; */
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: end;
+    line-height: 1em;
+}
+
+.card .author {
+    text-align: end;
+    margin-bottom: 1rem;
+    color: #1D3557;
+    font-size: 1rem;
+    /* text-transform:unset; */
+}
+
+.card .summary {
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.card .num-pages, .card .read-status {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.card span {
+    font-weight: 700;
+    color: #E63946;
+}
+
+.card button {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #E63946;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+@media (max-width: 764px) {
+
+    *{
+        font-size: 0.8rem;
+    }
+
+    form {
+        margin: 0;
+        margin-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    body{
+        padding: 0 2rem;
+    }
+    
+    form div {
+        margin: 1rem 0;
+    }
+    
+    form>div {
+        display: block;
+        margin: 0;
+    }
+    
+    label{
+        /* flex-grow: 1; */
+        flex-basis: 30%;
+    }
+
+    form>div:nth-of-type(3)>.input:nth-of-type(2){
+        display: block;
+    }
+
+}
