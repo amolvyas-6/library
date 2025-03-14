@@ -1,3 +1,7 @@
+html{
+    font-size: 16px;
+}
+
 * {
     font-family: 'Roboto';
     margin: 0;
@@ -149,10 +153,10 @@ label{
 
 @media (max-width: 764px) {
 
-    *{
-        font-size: 0.8rem;
+    html{
+        font-size: 13px;
     }
-
+    
     form {
         margin: 0;
         margin-bottom: 1rem;
@@ -162,7 +166,7 @@ label{
     .container {
         flex-direction: column;
         width: 100%;
-        
+
     }
 
     .card {
