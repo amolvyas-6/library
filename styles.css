@@ -65,6 +65,10 @@ label{
     font-weight: 500;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: #aa1c28 !important;
+}
 
 .input {
     display: flex;
